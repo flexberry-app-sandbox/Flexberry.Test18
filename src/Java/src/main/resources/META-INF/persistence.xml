@@ -5,7 +5,6 @@
     <persistence-unit name="Olingo4PG">
         <class>Test.model.Zapis</class>
         <class>Test.model.Klient</class>
-        <class>Test.model.OkazanieUslug</class>
         <class>Test.model.Usluga</class>
         <class>Test.model.FlexberryAdvLimit</class>
         <class>Test.model.NewPlatformFlexberryFlexberryUserSetting</class>

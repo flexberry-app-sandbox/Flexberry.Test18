@@ -35,6 +35,8 @@ namespace IIS.Test
         
         private string fНаименование;
         
+        private IIS.Test.Запись fЗапись;
+        
         // *** Start programmer edit section *** (Услуга CustomMembers)
 
         // *** End programmer edit section *** (Услуга CustomMembers)
@@ -101,6 +103,83 @@ namespace IIS.Test
 
                 // *** End programmer edit section *** (Услуга.Наименование Set end)
             }
+        }
+        
+        /// <summary>
+        /// мастеровая ссылка на шапку IIS.Test.Запись.
+        /// </summary>
+        // *** Start programmer edit section *** (Услуга.Запись CustomAttributes)
+
+        // *** End programmer edit section *** (Услуга.Запись CustomAttributes)
+        [Agregator()]
+        [NotNull()]
+        [PropertyStorage(new string[] {
+                "Запись"})]
+        public virtual IIS.Test.Запись Запись
+        {
+            get
+            {
+                // *** Start programmer edit section *** (Услуга.Запись Get start)
+
+                // *** End programmer edit section *** (Услуга.Запись Get start)
+                IIS.Test.Запись result = this.fЗапись;
+                // *** Start programmer edit section *** (Услуга.Запись Get end)
+
+                // *** End programmer edit section *** (Услуга.Запись Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (Услуга.Запись Set start)
+
+                // *** End programmer edit section *** (Услуга.Запись Set start)
+                this.fЗапись = value;
+                // *** Start programmer edit section *** (Услуга.Запись Set end)
+
+                // *** End programmer edit section *** (Услуга.Запись Set end)
+            }
+        }
+    }
+    
+    /// <summary>
+    /// Detail array of Услуга.
+    /// </summary>
+    // *** Start programmer edit section *** (DetailArrayDetailArrayOfУслуга CustomAttributes)
+
+    // *** End programmer edit section *** (DetailArrayDetailArrayOfУслуга CustomAttributes)
+    public class DetailArrayOfУслуга : ICSSoft.STORMNET.DetailArray
+    {
+        
+        // *** Start programmer edit section *** (IIS.Test.DetailArrayOfУслуга members)
+
+        // *** End programmer edit section *** (IIS.Test.DetailArrayOfУслуга members)
+
+        
+        /// <summary>
+        /// Construct detail array.
+        /// </summary>
+        /// <summary>
+        /// Returns object with type Услуга by index.
+        /// </summary>
+        /// <summary>
+        /// Adds object with type Услуга.
+        /// </summary>
+        public DetailArrayOfУслуга(IIS.Test.Запись fЗапись) : 
+                base(typeof(Услуга), ((ICSSoft.STORMNET.DataObject)(fЗапись)))
+        {
+        }
+        
+        public IIS.Test.Услуга this[int index]
+        {
+            get
+            {
+                return ((IIS.Test.Услуга)(this.ItemByIndex(index)));
+            }
+        }
+        
+        public virtual void Add(IIS.Test.Услуга dataobject)
+        {
+            this.AddObject(((ICSSoft.STORMNET.DataObject)(dataobject)));
         }
     }
 }

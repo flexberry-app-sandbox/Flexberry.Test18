@@ -53,7 +53,7 @@ public class Zapis {
     private Klient klient;
 
     @OneToMany(mappedBy = "zapis", fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
-    private List<OkazanieUslug> okazanieuslugs;
+    private List<Usluga> uslugas;
 
 
     public Zapis() {

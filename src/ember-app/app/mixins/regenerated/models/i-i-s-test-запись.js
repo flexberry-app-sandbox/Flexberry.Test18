@@ -12,7 +12,7 @@ export let Model = Mixin.create({
   сумма: DS.attr('decimal'),
   типОплаты: DS.attr('i-i-s-test-t-тип-оплаты'),
   клиент: DS.belongsTo('i-i-s-test-клиент', { inverse: null, async: false }),
-  оказаниеУслуг: DS.hasMany('i-i-s-test-оказание-услуг', { inverse: 'запись', async: false })
+  услуга: DS.hasMany('i-i-s-test-услуга', { inverse: 'запись', async: false })
 });
 
 export let ValidationRules = {
@@ -62,8 +62,8 @@ export let ValidationRules = {
       validator('presence', true),
     ],
   },
-  оказаниеУслуг: {
-    descriptionKey: 'models.i-i-s-test-запись.validations.оказаниеУслуг.__caption__',
+  услуга: {
+    descriptionKey: 'models.i-i-s-test-запись.validations.услуга.__caption__',
     validators: [
       validator('ds-error'),
       validator('has-many'),

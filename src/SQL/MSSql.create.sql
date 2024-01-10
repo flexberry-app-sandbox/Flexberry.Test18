@@ -38,17 +38,6 @@ CREATE TABLE [Клиент] (
 	 PRIMARY KEY ([primaryKey]))
 
 
-CREATE TABLE [ОказаниеУслуг] (
-
-	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
-
-	 [Услуга] UNIQUEIDENTIFIER  NOT NULL,
-
-	 [Запись] UNIQUEIDENTIFIER  NOT NULL,
-
-	 PRIMARY KEY ([primaryKey]))
-
-
 CREATE TABLE [Услуга] (
 
 	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
@@ -56,6 +45,8 @@ CREATE TABLE [Услуга] (
 	 [КодУслуги] INT  NULL,
 
 	 [Наименование] VARCHAR(255)  NULL,
+
+	 [Запись] UNIQUEIDENTIFIER  NOT NULL,
 
 	 PRIMARY KEY ([primaryKey]))
 

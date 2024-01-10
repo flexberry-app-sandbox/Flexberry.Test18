@@ -5,7 +5,8 @@ import { validator } from 'ember-cp-validations';
 
 export let Model = Mixin.create({
   кодУслуги: DS.attr('number'),
-  наименование: DS.attr('string')
+  наименование: DS.attr('string'),
+  запись: DS.belongsTo('i-i-s-test-запись', { inverse: 'услуга', async: false })
 });
 
 export let ValidationRules = {
@@ -20,6 +21,13 @@ export let ValidationRules = {
     descriptionKey: 'models.i-i-s-test-услуга.validations.наименование.__caption__',
     validators: [
       validator('ds-error'),
+    ],
+  },
+  запись: {
+    descriptionKey: 'models.i-i-s-test-услуга.validations.запись.__caption__',
+    validators: [
+      validator('ds-error'),
+      validator('presence', true),
     ],
   },
 };

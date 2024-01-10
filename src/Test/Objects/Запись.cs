@@ -64,7 +64,7 @@ namespace IIS.Test
         
         private IIS.Test.Клиент fКлиент;
         
-        private IIS.Test.DetailArrayOfОказаниеУслуг fОказаниеУслуг;
+        private IIS.Test.DetailArrayOfУслуга fУслуга;
         
         // *** Start programmer edit section *** (Запись CustomMembers)
 
@@ -296,35 +296,35 @@ namespace IIS.Test
         /// <summary>
         /// Запись.
         /// </summary>
-        // *** Start programmer edit section *** (Запись.ОказаниеУслуг CustomAttributes)
+        // *** Start programmer edit section *** (Запись.Услуга CustomAttributes)
 
-        // *** End programmer edit section *** (Запись.ОказаниеУслуг CustomAttributes)
-        public virtual IIS.Test.DetailArrayOfОказаниеУслуг ОказаниеУслуг
+        // *** End programmer edit section *** (Запись.Услуга CustomAttributes)
+        public virtual IIS.Test.DetailArrayOfУслуга Услуга
         {
             get
             {
-                // *** Start programmer edit section *** (Запись.ОказаниеУслуг Get start)
+                // *** Start programmer edit section *** (Запись.Услуга Get start)
 
-                // *** End programmer edit section *** (Запись.ОказаниеУслуг Get start)
-                if ((this.fОказаниеУслуг == null))
+                // *** End programmer edit section *** (Запись.Услуга Get start)
+                if ((this.fУслуга == null))
                 {
-                    this.fОказаниеУслуг = new IIS.Test.DetailArrayOfОказаниеУслуг(this);
+                    this.fУслуга = new IIS.Test.DetailArrayOfУслуга(this);
                 }
-                IIS.Test.DetailArrayOfОказаниеУслуг result = this.fОказаниеУслуг;
-                // *** Start programmer edit section *** (Запись.ОказаниеУслуг Get end)
+                IIS.Test.DetailArrayOfУслуга result = this.fУслуга;
+                // *** Start programmer edit section *** (Запись.Услуга Get end)
 
-                // *** End programmer edit section *** (Запись.ОказаниеУслуг Get end)
+                // *** End programmer edit section *** (Запись.Услуга Get end)
                 return result;
             }
             set
             {
-                // *** Start programmer edit section *** (Запись.ОказаниеУслуг Set start)
+                // *** Start programmer edit section *** (Запись.Услуга Set start)
 
-                // *** End programmer edit section *** (Запись.ОказаниеУслуг Set start)
-                this.fОказаниеУслуг = value;
-                // *** Start programmer edit section *** (Запись.ОказаниеУслуг Set end)
+                // *** End programmer edit section *** (Запись.Услуга Set start)
+                this.fУслуга = value;
+                // *** Start programmer edit section *** (Запись.Услуга Set end)
 
-                // *** End programmer edit section *** (Запись.ОказаниеУслуг Set end)
+                // *** End programmer edit section *** (Запись.Услуга Set end)
             }
         }
         

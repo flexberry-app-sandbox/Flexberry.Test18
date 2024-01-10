@@ -7,6 +7,7 @@ import Test.utils.UUIDConverter;
 import javax.persistence.*;
 import java.util.UUID;
 
+import com.sap.olingo.jpa.metadata.core.edm.annotation.EdmIgnore;
 
 /**
  * Entity implementation class for Entity: Услуга
@@ -26,6 +27,16 @@ public class Usluga {
 
     @Column(name = "Наименование")
     private String наименование;
+
+    @EdmIgnore
+    @Converter(converterClass = UUIDConverter.class, name = "Zapis")
+    @Convert("Zapis")
+    @Column(name = "Запись", length = 16, unique = true, nullable = false)
+    private UUID _zapisid;
+
+    @ManyToOne(optional = false, fetch = FetchType.LAZY)
+    @JoinColumn(name = "Zapis", insertable = false, updatable = false)
+    private Zapis zapis;
 
 
     public Usluga() {

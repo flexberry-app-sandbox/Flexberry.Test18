@@ -72,8 +72,8 @@
   ],
   "hasMany": [
     {
-      "name": "оказаниеУслуг",
-      "relatedTo": "i-i-s-test-оказание-услуг",
+      "name": "услуга",
+      "relatedTo": "i-i-s-test-услуга",
       "inverse": "запись"
     }
   ],

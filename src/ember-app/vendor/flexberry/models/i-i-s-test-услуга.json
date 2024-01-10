@@ -25,7 +25,15 @@
       "ordered": false
     }
   ],
-  "belongsTo": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "запись",
+      "relatedTo": "i-i-s-test-запись",
+      "inverse": "услуга"
+    }
+  ],
   "hasMany": [],
   "projections": [],
   "stored": true,

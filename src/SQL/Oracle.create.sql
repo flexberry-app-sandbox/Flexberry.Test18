@@ -42,19 +42,6 @@ CREATE TABLE "Клиент"
 ) ;
 
 
-CREATE TABLE "ОказаниеУслуг"
-(
-
-	"primaryKey" RAW(16) NOT NULL,
-
-	"Услуга" RAW(16) NOT NULL,
-
-	"Запись" RAW(16) NOT NULL,
-
-	 PRIMARY KEY ("primaryKey")
-) ;
-
-
 CREATE TABLE "Услуга"
 (
 
@@ -63,6 +50,8 @@ CREATE TABLE "Услуга"
 	"КодУслуги" NUMBER(10) NULL,
 
 	"Наименование" NVARCHAR2(255) NULL,
+
+	"Запись" RAW(16) NOT NULL,
 
 	 PRIMARY KEY ("primaryKey")
 ) ;
@@ -271,15 +260,10 @@ ALTER TABLE "Запись"
 
 CREATE INDEX "Запись_IКлиент" on "Запись" ("Клиент");
 
-ALTER TABLE "ОказаниеУслуг"
-	ADD CONSTRAINT "ОказаниеУслуг_778" FOREIGN KEY ("Услуга") REFERENCES "Услуга" ("primaryKey");
+ALTER TABLE "Услуга"
+	ADD CONSTRAINT "Услуга_FЗапись_0" FOREIGN KEY ("Запись") REFERENCES "Запись" ("primaryKey");
 
-CREATE INDEX "ОказаниеУслу_4955" on "ОказаниеУслуг" ("Услуга");
-
-ALTER TABLE "ОказаниеУслуг"
-	ADD CONSTRAINT "ОказаниеУслу_6961" FOREIGN KEY ("Запись") REFERENCES "Запись" ("primaryKey");
-
-CREATE INDEX "ОказаниеУслу_6652" on "ОказаниеУслуг" ("Запись");
+CREATE INDEX "Услуга_IЗапись" on "Услуга" ("Запись");
 
 ALTER TABLE "STORMWEBSEARCH"
 	ADD CONSTRAINT "STORMWEBSEARCH_FSTORMFILT_6521" FOREIGN KEY ("FilterSetting_m0") REFERENCES "STORMFILTERSETTING" ("primaryKey");
