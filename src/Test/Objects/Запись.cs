@@ -50,7 +50,7 @@ namespace IIS.Test
     public class Запись : ICSSoft.STORMNET.DataObject
     {
         
-        private IIS.Test.ТипОплаты fТипОплаты;
+        private IIS.Test.tТипОплаты fТипОплаты;
         
         private string fКомментарий;
         
@@ -232,14 +232,14 @@ namespace IIS.Test
         // *** Start programmer edit section *** (Запись.ТипОплаты CustomAttributes)
 
         // *** End programmer edit section *** (Запись.ТипОплаты CustomAttributes)
-        public virtual IIS.Test.ТипОплаты ТипОплаты
+        public virtual IIS.Test.tТипОплаты ТипОплаты
         {
             get
             {
                 // *** Start programmer edit section *** (Запись.ТипОплаты Get start)
 
                 // *** End programmer edit section *** (Запись.ТипОплаты Get start)
-                IIS.Test.ТипОплаты result = this.fТипОплаты;
+                IIS.Test.tТипОплаты result = this.fТипОплаты;
                 // *** Start programmer edit section *** (Запись.ТипОплаты Get end)
 
                 // *** End programmer edit section *** (Запись.ТипОплаты Get end)

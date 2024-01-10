@@ -27,7 +27,7 @@
   <div class="field" data-test-i-i-s-test-запись-e-типОплаты="true">
     <label>{{t "forms.i-i-s-test-запись-e.типОплаты-caption"}}</label>
     {{flexberry-dropdown
-      items=(flexberry-enum "i-i-s-test-тип-оплаты")
+      items=(flexberry-enum "i-i-s-test-t-тип-оплаты")
       value=model.типОплаты
       class=(if (v-get validationModel "типОплаты" "isInvalid") "error")
       readonly=readonly

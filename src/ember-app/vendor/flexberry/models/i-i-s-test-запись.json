@@ -53,8 +53,8 @@
     },
     {
       "name": "типОплаты",
-      "type": "i-i-s-test-тип-оплаты",
-      "flexberryType": "ТипОплаты",
+      "type": "i-i-s-test-t-тип-оплаты",
+      "flexberryType": "tТипОплаты",
       "notNull": false,
       "defaultValue": "",
       "stored": true,

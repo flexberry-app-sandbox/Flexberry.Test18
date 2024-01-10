@@ -9,6 +9,7 @@ moduleForModel('i-i-s-test-запись', 'Unit | Serializer | i-i-s-test-зап
     'transform:decimal',
     'transform:guid',
 
+    'transform:i-i-s-test-t-тип-оплаты',
     'transform:i-i-s-test-тип-оплаты',
 
     'model:i-i-s-test-запись',
