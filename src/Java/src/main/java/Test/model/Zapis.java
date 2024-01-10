@@ -23,9 +23,6 @@ public class Zapis {
     @Column(name = "primarykey", length = 16, unique = true, nullable = false)
     private UUID primarykey;
 
-    @Column(name = "ТипОплаты")
-    private String типоплаты;
-
     @Column(name = "Комментарий")
     private String комментарий;
 
@@ -40,6 +37,9 @@ public class Zapis {
 
     @Column(name = "Дата")
     private Date дата;
+
+    @Column(name = "ТипОплаты")
+    private String типоплаты;
 
     @EdmIgnore
     @Converter(converterClass = UUIDConverter.class, name = "Klient")
@@ -62,14 +62,6 @@ public class Zapis {
 
     public UUID getPrimarykey() {
         return primarykey;
-    }
-
-    public String getТипОплаты() {
-      return типоплаты;
-    }
-
-    public void setТипОплаты(String типоплаты) {
-      this.типоплаты = типоплаты;
     }
 
     public String getКомментарий() {
@@ -110,6 +102,14 @@ public class Zapis {
 
     public void setДата(Date дата) {
       this.дата = дата;
+    }
+
+    public String getТипОплаты() {
+      return типоплаты;
+    }
+
+    public void setТипОплаты(String типоплаты) {
+      this.типоплаты = типоплаты;
     }
 
 

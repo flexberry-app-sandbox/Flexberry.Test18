@@ -5,12 +5,12 @@
 
 CREATE TABLE Запись (
  primaryKey UUID NOT NULL,
- ТипОплаты VARCHAR(8) NULL,
  Комментарий VARCHAR(255) NULL,
  Сумма DOUBLE PRECISION NULL,
  КодЗаписи INT NULL,
  Время VARCHAR(255) NULL,
  Дата TIMESTAMP(3) NULL,
+ ТипОплаты VARCHAR(8) NULL,
  Клиент UUID NOT NULL,
  PRIMARY KEY (primaryKey));
 

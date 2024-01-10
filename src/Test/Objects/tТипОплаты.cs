@@ -28,14 +28,14 @@ namespace IIS.Test
     public enum tТипОплаты
     {
         
-        // *** Start programmer edit section *** (tТипОплаты.Наличные CustomAttributes)
-
-        // *** End programmer edit section *** (tТипОплаты.Наличные CustomAttributes)
-        Наличные,
-        
         // *** Start programmer edit section *** (tТипОплаты.Картой CustomAttributes)
 
         // *** End programmer edit section *** (tТипОплаты.Картой CustomAttributes)
         Картой,
+        
+        // *** Start programmer edit section *** (tТипОплаты.Наличные CustomAttributes)
+
+        // *** End programmer edit section *** (tТипОплаты.Наличные CustomAttributes)
+        Наличные,
     }
 }

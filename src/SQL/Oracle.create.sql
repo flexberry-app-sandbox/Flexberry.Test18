@@ -7,8 +7,6 @@ CREATE TABLE "Запись"
 
 	"primaryKey" RAW(16) NOT NULL,
 
-	"ТипОплаты" NVARCHAR2(8) NULL,
-
 	"Комментарий" NVARCHAR2(255) NULL,
 
 	"Сумма" FLOAT(126) NULL,
@@ -18,6 +16,8 @@ CREATE TABLE "Запись"
 	"Время" NVARCHAR2(255) NULL,
 
 	"Дата" DATE NULL,
+
+	"ТипОплаты" NVARCHAR2(8) NULL,
 
 	"Клиент" RAW(16) NOT NULL,
 

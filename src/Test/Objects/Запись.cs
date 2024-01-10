@@ -50,8 +50,6 @@ namespace IIS.Test
     public class Запись : ICSSoft.STORMNET.DataObject
     {
         
-        private IIS.Test.tТипОплаты fТипОплаты;
-        
         private string fКомментарий;
         
         private double fСумма;
@@ -61,6 +59,8 @@ namespace IIS.Test
         private string fВремя;
         
         private System.DateTime fДата;
+        
+        private IIS.Test.tТипОплаты fТипОплаты;
         
         private IIS.Test.Клиент fКлиент;
         
