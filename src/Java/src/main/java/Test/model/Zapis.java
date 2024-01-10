@@ -9,6 +9,7 @@ import java.util.UUID;
 
 import com.sap.olingo.jpa.metadata.core.edm.annotation.EdmIgnore;
 import java.util.Date;
+import java.util.List;
 
 /**
  * Entity implementation class for Entity: Запись
@@ -50,6 +51,9 @@ public class Zapis {
     @ManyToOne(optional = false, fetch = FetchType.LAZY)
     @JoinColumn(name = "Klient", insertable = false, updatable = false)
     private Klient klient;
+
+    @OneToMany(mappedBy = "zapis", fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
+    private List<OkazanieUslug> okazanieuslugs;
 
 
     public Zapis() {

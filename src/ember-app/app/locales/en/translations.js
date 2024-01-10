@@ -7,6 +7,8 @@ import IISTestЗаписьEForm from './forms/i-i-s-test-запись-e';
 import IISTestКлиентEForm from './forms/i-i-s-test-клиент-e';
 import IISTestЗаписьModel from './models/i-i-s-test-запись';
 import IISTestКлиентModel from './models/i-i-s-test-клиент';
+import IISTestОказаниеУслугModel from './models/i-i-s-test-оказание-услуг';
+import IISTestУслугаModel from './models/i-i-s-test-услуга';
 
 const translations = {};
 $.extend(true, translations, EmberFlexberryTranslations);
@@ -14,7 +16,9 @@ $.extend(true, translations, EmberFlexberryTranslations);
 $.extend(true, translations, {
   models: {
     'i-i-s-test-запись': IISTestЗаписьModel,
-    'i-i-s-test-клиент': IISTestКлиентModel
+    'i-i-s-test-клиент': IISTestКлиентModel,
+    'i-i-s-test-оказание-услуг': IISTestОказаниеУслугModel,
+    'i-i-s-test-услуга': IISTestУслугаModel
   },
 
   'application-name': 'Test',

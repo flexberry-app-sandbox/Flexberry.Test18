@@ -64,6 +64,8 @@ namespace IIS.Test
         
         private IIS.Test.Клиент fКлиент;
         
+        private IIS.Test.DetailArrayOfОказаниеУслуг fОказаниеУслуг;
+        
         // *** Start programmer edit section *** (Запись CustomMembers)
 
         // *** End programmer edit section *** (Запись CustomMembers)
@@ -288,6 +290,41 @@ namespace IIS.Test
                 // *** Start programmer edit section *** (Запись.Клиент Set end)
 
                 // *** End programmer edit section *** (Запись.Клиент Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Запись.
+        /// </summary>
+        // *** Start programmer edit section *** (Запись.ОказаниеУслуг CustomAttributes)
+
+        // *** End programmer edit section *** (Запись.ОказаниеУслуг CustomAttributes)
+        public virtual IIS.Test.DetailArrayOfОказаниеУслуг ОказаниеУслуг
+        {
+            get
+            {
+                // *** Start programmer edit section *** (Запись.ОказаниеУслуг Get start)
+
+                // *** End programmer edit section *** (Запись.ОказаниеУслуг Get start)
+                if ((this.fОказаниеУслуг == null))
+                {
+                    this.fОказаниеУслуг = new IIS.Test.DetailArrayOfОказаниеУслуг(this);
+                }
+                IIS.Test.DetailArrayOfОказаниеУслуг result = this.fОказаниеУслуг;
+                // *** Start programmer edit section *** (Запись.ОказаниеУслуг Get end)
+
+                // *** End programmer edit section *** (Запись.ОказаниеУслуг Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (Запись.ОказаниеУслуг Set start)
+
+                // *** End programmer edit section *** (Запись.ОказаниеУслуг Set start)
+                this.fОказаниеУслуг = value;
+                // *** Start programmer edit section *** (Запись.ОказаниеУслуг Set end)
+
+                // *** End programmer edit section *** (Запись.ОказаниеУслуг Set end)
             }
         }
         

@@ -5,6 +5,8 @@ moduleForModel('i-i-s-test-клиент', 'Unit | Model | i-i-s-test-клиен�
   needs: [
     'model:i-i-s-test-запись',
     'model:i-i-s-test-клиент',
+    'model:i-i-s-test-оказание-услуг',
+    'model:i-i-s-test-услуга',
     'validator:ds-error',
     'validator:presence',
     'validator:number',

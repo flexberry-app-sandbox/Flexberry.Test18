@@ -22,7 +22,7 @@ export default Controller.extend({
             link: 'i-i-s-test-запись-l',
             caption: i18n.t('forms.application.sitemap.test.i-i-s-test-запись-l.caption'),
             title: i18n.t('forms.application.sitemap.test.i-i-s-test-запись-l.title'),
-            icon: 'calendar',
+            icon: 'list',
             children: null
           }, {
             link: 'i-i-s-test-клиент-l',

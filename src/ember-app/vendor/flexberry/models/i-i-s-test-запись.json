@@ -70,7 +70,13 @@
       "inverse": null
     }
   ],
-  "hasMany": [],
+  "hasMany": [
+    {
+      "name": "оказаниеУслуг",
+      "relatedTo": "i-i-s-test-оказание-услуг",
+      "inverse": "запись"
+    }
+  ],
   "projections": [
     {
       "name": "ЗаписьE",

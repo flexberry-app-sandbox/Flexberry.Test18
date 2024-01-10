@@ -1,0 +1,30 @@
+﻿{
+  "name": "IISTestОказаниеУслуг",
+  "modelName": "i-i-s-test-оказание-услуг",
+  "className": "ОказаниеУслуг",
+  "nameSpace": "IIS.Test",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "услуга",
+      "relatedTo": "i-i-s-test-услуга",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "запись",
+      "relatedTo": "i-i-s-test-запись",
+      "inverse": "оказаниеУслуг"
+    }
+  ],
+  "hasMany": [],
+  "projections": [],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
