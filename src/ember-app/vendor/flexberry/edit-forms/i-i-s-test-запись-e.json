@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Клиент",
+      "projection": "КлиентL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Запись",
+  "name": "IISTestЗаписьE",
+  "className": "ЗаписьE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-test-запись",
+      "modelProjection": "ЗаписьE"
+    }
+  ]
+}
